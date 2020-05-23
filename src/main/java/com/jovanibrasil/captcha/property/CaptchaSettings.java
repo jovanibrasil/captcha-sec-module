@@ -1,4 +1,4 @@
-package com.jovanibrasil.captcha.properties;
+package com.jovanibrasil.captcha.property;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;

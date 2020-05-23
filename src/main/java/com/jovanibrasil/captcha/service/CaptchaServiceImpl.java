@@ -1,4 +1,4 @@
-package com.jovanibrasil.captcha.services;
+package com.jovanibrasil.captcha.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestOperations;
 
-import com.jovanibrasil.captcha.exceptions.InvalidRecaptchaException;
-import com.jovanibrasil.captcha.exceptions.ReCaptchaInvalidException;
-import com.jovanibrasil.captcha.properties.CaptchaSettings;
+import com.jovanibrasil.captcha.exception.InvalidRecaptchaException;
+import com.jovanibrasil.captcha.exception.ReCaptchaInvalidException;
+import com.jovanibrasil.captcha.property.CaptchaSettings;
 
 import javax.servlet.http.HttpServletRequest;
 

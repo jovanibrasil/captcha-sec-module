@@ -1,7 +1,7 @@
-package com.jovanibrasil.captcha.services;
+package com.jovanibrasil.captcha.service;
 
-import com.jovanibrasil.captcha.exceptions.InvalidRecaptchaException;
-import com.jovanibrasil.captcha.exceptions.ReCaptchaInvalidException;
+import com.jovanibrasil.captcha.exception.InvalidRecaptchaException;
+import com.jovanibrasil.captcha.exception.ReCaptchaInvalidException;
 
 public interface CaptchaService {
 

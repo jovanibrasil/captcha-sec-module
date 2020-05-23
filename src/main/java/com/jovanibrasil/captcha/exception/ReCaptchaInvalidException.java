@@ -1,4 +1,4 @@
-package com.jovanibrasil.captcha.exceptions;
+package com.jovanibrasil.captcha.exception;
 
 public class ReCaptchaInvalidException extends Exception {
 

@@ -1,4 +1,4 @@
-package com.jovanibrasil.captcha.services;
+package com.jovanibrasil.captcha.service;
 
 import com.fasterxml.jackson.annotation.*;
 

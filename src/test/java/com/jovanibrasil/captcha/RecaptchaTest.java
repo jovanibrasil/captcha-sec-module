@@ -20,9 +20,10 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.jovanibrasil.captcha.exceptions.InvalidRecaptchaException;
-import com.jovanibrasil.captcha.exceptions.ReCaptchaInvalidException;
-import com.jovanibrasil.captcha.services.CaptchaService;
+import com.jovanibrasil.captcha.aspect.CaptchaAspect;
+import com.jovanibrasil.captcha.exception.InvalidRecaptchaException;
+import com.jovanibrasil.captcha.exception.ReCaptchaInvalidException;
+import com.jovanibrasil.captcha.service.CaptchaService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(loader=AnnotationConfigContextLoader.class)
@@ -30,7 +31,6 @@ public class RecaptchaTest {
 	
 	@Autowired SimpleMock targetProxy;
 	@Autowired CaptchaService captchaService;
-	
 	
 	@Test
 	public void proxyCreated() {

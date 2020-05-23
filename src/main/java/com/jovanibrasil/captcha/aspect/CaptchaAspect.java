@@ -1,4 +1,4 @@
-package com.jovanibrasil.captcha;
+package com.jovanibrasil.captcha.aspect;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.jovanibrasil.captcha.exceptions.InvalidRecaptchaException;
-import com.jovanibrasil.captcha.services.CaptchaService;
+import com.jovanibrasil.captcha.exception.InvalidRecaptchaException;
+import com.jovanibrasil.captcha.service.CaptchaService;
 
 @Aspect
 @Component
