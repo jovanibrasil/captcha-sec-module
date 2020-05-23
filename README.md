@@ -23,21 +23,21 @@ captcha.keysecret=${YOUR_RECAPTCHA_KEY_SECRET}
 
 Por fim você deve habilitar o módulo nas suas configuraço utilizando a anotação 
 ```@EnableRecaptchaVerification``` e em cada método que for necessário a validação
-você adiciona a anotação @Recaptcha.
+você adiciona a anotação @Recaptcha. Por exemplo:
 
-```
-@Recaptcha
-@PutMapping
-public ResponseEntity<UserDTO> updateUser(@Valid @RequestBody UpdateUserForm userDto){ 
-  ... 
-}
-```
 ```
 @Configuration
 @EnableWebSecurity
 @EnableRecaptchaVerification
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 ...
+}
+```
+```
+@Recaptcha
+@PutMapping
+public ResponseEntity<UserDTO> updateUser(@Valid @RequestBody UpdateUserForm userDto){ 
+  ... 
 }
 ```
 E é isso. Qualquer dúvida entre em contato.
