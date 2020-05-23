@@ -42,5 +42,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+		
+	<distributionManagement>
+	   <repository>
+	     <id>recaptcha-sec-module</id>
+	     <name>jovanibrasil</name>
+	     <url>https://maven.pkg.github.com/jovanibrasil/recaptcha-sec-module</url>
+	   </repository>
+	</distributionManagement>
 
 </project>
