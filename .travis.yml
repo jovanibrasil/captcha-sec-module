@@ -12,7 +12,6 @@ deploy:
   username: "${PACKAGECLOUD_USER}"
   repository: "${PACKAGECLOUD_REPO}"
   token: "${PACKAGECLOUD_TOKEN}"
-  skip_cleanup: true
   on:
     branch: "develop"   
  
