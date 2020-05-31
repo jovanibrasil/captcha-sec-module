@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jovanibrasil</groupId>
 	<artifactId>recaptcha-sec-module</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
-
+	<version>1.0.0</version>
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -42,13 +42,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-		
-	<distributionManagement>
-	   <repository>
-	     <id>recaptcha-sec-module</id>
-	     <name>jovanibrasil</name>
-	     <url>https://maven.pkg.github.com/jovanibrasil/recaptcha-sec-module</url>
-	   </repository>
-	</distributionManagement>
-
+	
 </project>
