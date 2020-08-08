@@ -9,9 +9,9 @@ Adicione ao seu pom a seguinte dependência:
 
 ```
 <dependency>
-  <groupId>com.jovanibrasil</groupId>
+  <groupId>com.github.jovanibrasil</groupId>
   <artifactId>recaptcha-sec-module</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 Então você deve adicionar as chaves site e secret ao seu ```application.properties```:
@@ -21,7 +21,7 @@ captcha.keysite=${YOUR_RECAPTCHA_KEY_SITE}
 captcha.keysecret=${YOUR_RECAPTCHA_KEY_SECRET}
 ```
 
-Por fim você deve habilitar o módulo nas suas configuraço utilizando a anotação 
+Por fim você deve habilitar o módulo nas suas configurações utilizando a anotação 
 ```@EnableRecaptchaVerification``` e em cada método que for necessário a validação
 você adiciona a anotação @Recaptcha. Por exemplo:
 
